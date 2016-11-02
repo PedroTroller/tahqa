@@ -1,0 +1,17 @@
+parameters:
+    MONGO_DSN: '%MONGO_HOST%:%MONGO_PORT%'
+
+services:
+
+    mongo.client:
+        class: MongoClient
+        arguments:
+            server: '%MONGO_DSN%'
+
+    mongo.db:
+        class: MongoDB
+        arguments:
+            conn: '@mongo.client'
+            name: '%MONGO_DB%'
+        calls:
+            - [ 'authenticate', [ '%MONGO_USERNAME%', '%MONGO_PASSWORD%' ]]

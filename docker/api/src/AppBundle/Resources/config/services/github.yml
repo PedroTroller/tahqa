@@ -1,0 +1,4 @@
+services:
+
+    github.client:
+        class: Github\Client

@@ -1,0 +1,18 @@
+#!/bin/bash
+
+set -exuo pipefail
+
+TOKEN=179c61eb21573191ca53b7dea266bc1db96986c9
+USER=PedroTroller
+COMMIT=673ad16d24f0808c9aa994327bf3c41336939ff2
+
+mkdir $COMMIT
+
+curl -u $USER:$TOKEN -L \
+    https://github.com/PedroTroller/dummy-docker/archive/$COMMIT.tar.gz | tar --strip-components=1 -x -v -z -C $COMMIT
+
+cd $COMMIT
+
+/app/lib/sanitizer/bin/sanitizer fix docker-compose.yml
+
+docker-compose build && docker-compose up

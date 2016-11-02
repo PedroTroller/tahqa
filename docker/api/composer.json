@@ -1,0 +1,35 @@
+{
+    "name": "symfony/framework-standard-edition",
+    "license": "MIT",
+    "type": "project",
+    "description": "The \"Symfony Standard Edition\" distribution",
+    "require": {
+        "php": ">=7.0.0",
+        "knplabs/github-api": "^1.7",
+        "php-http/guzzle6-adapter": "^1.1",
+        "symfony/monolog-bundle": "^2.8",
+        "symfony/polyfill-apcu": "^1.0",
+        "symfony/symfony": "3.1.*"
+    },
+    "require-dev": {
+        "bossa/phpspec2-expect": "^2.0",
+        "pedrotroller/php-cs-custom-fixer": "^1.5",
+        "phpspec/phpspec": "3.0.*"
+    },
+    "autoload": {
+        "psr-4": { "": "src/" },
+        "classmap": [ "app/AppKernel.php", "app/AppCache.php" ]
+    },
+    "config": {
+        "bin-dir": "bin",
+        "sort-packages": true
+    },
+    "extra": {
+        "symfony-app-dir": "app",
+        "symfony-bin-dir": "bin",
+        "symfony-var-dir": "var",
+        "symfony-web-dir": "web",
+        "symfony-tests-dir": "tests",
+        "symfony-assets-install": "relative"
+    }
+}

@@ -1,0 +1,130 @@
+{
+  "sha": "ea6f4d473109c43253d4b5e75d473a51da819e08",
+  "commit": {
+    "author": {
+      "name": "Andrew Kovalyov",
+      "email": "akovalyov@users.noreply.github.com",
+      "date": "2016-05-31T08:06:54Z"
+    },
+    "committer": {
+      "name": "Andrew Kovalyov",
+      "email": "akovalyov@users.noreply.github.com",
+      "date": "2016-05-31T08:06:54Z"
+    },
+    "message": "Merge pull request #413 from NiR-/fix/remove-unneeded-str-replace\n\nRemove useless str_replace",
+    "tree": {
+      "sha": "3ef4e872e92f81f1b4e56d75222994ff42696177",
+      "url": "https://api.github.com/repos/KnpLabs/Gaufrette/git/trees/3ef4e872e92f81f1b4e56d75222994ff42696177"
+    },
+    "url": "https://api.github.com/repos/KnpLabs/Gaufrette/git/commits/ea6f4d473109c43253d4b5e75d473a51da819e08",
+    "comment_count": 0
+  },
+  "url": "https://api.github.com/repos/KnpLabs/Gaufrette/commits/ea6f4d473109c43253d4b5e75d473a51da819e08",
+  "html_url": "https://github.com/KnpLabs/Gaufrette/commit/ea6f4d473109c43253d4b5e75d473a51da819e08",
+  "comments_url": "https://api.github.com/repos/KnpLabs/Gaufrette/commits/ea6f4d473109c43253d4b5e75d473a51da819e08/comments",
+  "author": {
+    "login": "akovalyov",
+    "id": 2339101,
+    "avatar_url": "https://avatars.githubusercontent.com/u/2339101?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/akovalyov",
+    "html_url": "https://github.com/akovalyov",
+    "followers_url": "https://api.github.com/users/akovalyov/followers",
+    "following_url": "https://api.github.com/users/akovalyov/following{/other_user}",
+    "gists_url": "https://api.github.com/users/akovalyov/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/akovalyov/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/akovalyov/subscriptions",
+    "organizations_url": "https://api.github.com/users/akovalyov/orgs",
+    "repos_url": "https://api.github.com/users/akovalyov/repos",
+    "events_url": "https://api.github.com/users/akovalyov/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/akovalyov/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "akovalyov",
+    "id": 2339101,
+    "avatar_url": "https://avatars.githubusercontent.com/u/2339101?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/akovalyov",
+    "html_url": "https://github.com/akovalyov",
+    "followers_url": "https://api.github.com/users/akovalyov/followers",
+    "following_url": "https://api.github.com/users/akovalyov/following{/other_user}",
+    "gists_url": "https://api.github.com/users/akovalyov/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/akovalyov/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/akovalyov/subscriptions",
+    "organizations_url": "https://api.github.com/users/akovalyov/orgs",
+    "repos_url": "https://api.github.com/users/akovalyov/repos",
+    "events_url": "https://api.github.com/users/akovalyov/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/akovalyov/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "aaeeb42c692783005b84e5f4832864575b852eeb",
+      "url": "https://api.github.com/repos/KnpLabs/Gaufrette/commits/aaeeb42c692783005b84e5f4832864575b852eeb",
+      "html_url": "https://github.com/KnpLabs/Gaufrette/commit/aaeeb42c692783005b84e5f4832864575b852eeb"
+    },
+    {
+      "sha": "5338bbac0f17983cca524cfccd5fb115822d3ac3",
+      "url": "https://api.github.com/repos/KnpLabs/Gaufrette/commits/5338bbac0f17983cca524cfccd5fb115822d3ac3",
+      "html_url": "https://github.com/KnpLabs/Gaufrette/commit/5338bbac0f17983cca524cfccd5fb115822d3ac3"
+    }
+  ],
+  "stats": {
+    "total": 23,
+    "additions": 12,
+    "deletions": 11
+  },
+  "files": [
+    {
+      "sha": "401ce37321a7a6f0a201ddaecf94aa88d76515a5",
+      "filename": "src/Gaufrette/Adapter/AmazonS3.php",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/KnpLabs/Gaufrette/blob/ea6f4d473109c43253d4b5e75d473a51da819e08/src/Gaufrette/Adapter/AmazonS3.php",
+      "raw_url": "https://github.com/KnpLabs/Gaufrette/raw/ea6f4d473109c43253d4b5e75d473a51da819e08/src/Gaufrette/Adapter/AmazonS3.php",
+      "contents_url": "https://api.github.com/repos/KnpLabs/Gaufrette/contents/src/Gaufrette/Adapter/AmazonS3.php?ref=ea6f4d473109c43253d4b5e75d473a51da819e08",
+      "patch": "@@ -200,8 +200,8 @@ public function keys()\n \n         $keys = array();\n         foreach ($list as $file) {\n-            if ('.' !== \\Gaufrette\\Util\\Path::dirname($file)) {\n-                $keys[] = \\Gaufrette\\Util\\Path::dirname($file);\n+            if ('.' !== $dirname = \\Gaufrette\\Util\\Path::dirname($file)) {\n+                $keys[] = $dirname;\n             }\n             $keys[] = $file;\n         }"
+    },
+    {
+      "sha": "827f4fa1f39fe66fd2163c7cb251b6c0ee7b4d68",
+      "filename": "src/Gaufrette/Adapter/Dropbox.php",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/KnpLabs/Gaufrette/blob/ea6f4d473109c43253d4b5e75d473a51da819e08/src/Gaufrette/Adapter/Dropbox.php",
+      "raw_url": "https://github.com/KnpLabs/Gaufrette/raw/ea6f4d473109c43253d4b5e75d473a51da819e08/src/Gaufrette/Adapter/Dropbox.php",
+      "contents_url": "https://api.github.com/repos/KnpLabs/Gaufrette/contents/src/Gaufrette/Adapter/Dropbox.php?ref=ea6f4d473109c43253d4b5e75d473a51da819e08",
+      "patch": "@@ -137,8 +137,8 @@ public function keys()\n         foreach ($metadata['contents'] as $value) {\n             $file = ltrim($value['path'], '/');\n             $keys[] = $file;\n-            if ('.' !== \\Gaufrette\\Util\\Path::dirname($file)) {\n-                $keys[] = \\Gaufrette\\Util\\Path::dirname($file);\n+            if ('.' !== $dirname = \\Gaufrette\\Util\\Path::dirname($file)) {\n+                $keys[] = $dirname;\n             }\n         }\n         sort($keys);"
+    },
+    {
+      "sha": "9b5d41d83a741e01b3ab246d8dc2ad1839dfe0b1",
+      "filename": "src/Gaufrette/Adapter/Ftp.php",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 5,
+      "changes": 11,
+      "blob_url": "https://github.com/KnpLabs/Gaufrette/blob/ea6f4d473109c43253d4b5e75d473a51da819e08/src/Gaufrette/Adapter/Ftp.php",
+      "raw_url": "https://github.com/KnpLabs/Gaufrette/raw/ea6f4d473109c43253d4b5e75d473a51da819e08/src/Gaufrette/Adapter/Ftp.php",
+      "contents_url": "https://api.github.com/repos/KnpLabs/Gaufrette/contents/src/Gaufrette/Adapter/Ftp.php?ref=ea6f4d473109c43253d4b5e75d473a51da819e08",
+      "patch": "@@ -79,7 +79,7 @@ public function write($key, $content)\n         $this->ensureDirectoryExists($this->directory, $this->create);\n \n         $path = $this->computePath($key);\n-        $directory = str_replace('\\\\', '/', \\Gaufrette\\Util\\Path::dirname($path));\n+        $directory = \\Gaufrette\\Util\\Path::dirname($path);\n \n         $this->ensureDirectoryExists($directory, true);\n \n@@ -108,7 +108,7 @@ public function rename($sourceKey, $targetKey)\n         $sourcePath = $this->computePath($sourceKey);\n         $targetPath = $this->computePath($targetKey);\n \n-        $this->ensureDirectoryExists(str_replace('\\\\', '/', \\Gaufrette\\Util\\Path::dirname($targetPath)), true);\n+        $this->ensureDirectoryExists(\\Gaufrette\\Util\\Path::dirname($targetPath));\n \n         return ftp_rename($this->getConnection(), $sourcePath, $targetPath);\n     }\n@@ -121,7 +121,7 @@ public function exists($key)\n         $this->ensureDirectoryExists($this->directory, $this->create);\n \n         $file  = $this->computePath($key);\n-        $lines = ftp_rawlist($this->getConnection(), '-al ' . str_replace('\\\\', '/', \\Gaufrette\\Util\\Path::dirname($file)));\n+        $lines = ftp_rawlist($this->getConnection(), '-al ' . \\Gaufrette\\Util\\Path::dirname($file));\n \n         if (false === $lines) {\n             return false;\n@@ -275,7 +275,8 @@ public function createFile($key, Filesystem $filesystem)\n         $file = new File($key, $filesystem);\n \n         if (!array_key_exists($key, $this->fileData)) {\n-            $directory = \\Gaufrette\\Util\\Path::dirname($key) == '.' ? '' : str_replace('\\\\', '/', \\Gaufrette\\Util\\Path::dirname($key));\n+            $dirname = \\Gaufrette\\Util\\Path::dirname($key);\n+            $directory = $dirname == '.' ? '' : $dirname;\n             $this->listDirectory($directory);\n         }\n \n@@ -321,7 +322,7 @@ protected function ensureDirectoryExists($directory, $create = false)\n     protected function createDirectory($directory)\n     {\n         // create parent directory if needed\n-        $parent = str_replace('\\\\', '/', \\Gaufrette\\Util\\Path::dirname($directory));\n+        $parent = \\Gaufrette\\Util\\Path::dirname($directory);\n         if (!$this->isDir($parent)) {\n             $this->createDirectory($parent);\n         }"
+    },
+    {
+      "sha": "669b8b4ebaf6aa4d885f2a2eef3ae455e4767665",
+      "filename": "src/Gaufrette/Adapter/Sftp.php",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/KnpLabs/Gaufrette/blob/ea6f4d473109c43253d4b5e75d473a51da819e08/src/Gaufrette/Adapter/Sftp.php",
+      "raw_url": "https://github.com/KnpLabs/Gaufrette/raw/ea6f4d473109c43253d4b5e75d473a51da819e08/src/Gaufrette/Adapter/Sftp.php",
+      "contents_url": "https://api.github.com/repos/KnpLabs/Gaufrette/contents/src/Gaufrette/Adapter/Sftp.php?ref=ea6f4d473109c43253d4b5e75d473a51da819e08",
+      "patch": "@@ -101,8 +101,8 @@ public function keys()\n \n         $dirs = array();\n         foreach ($files as $file) {\n-            if ('.' !== \\Gaufrette\\Util\\Path::dirname($file)) {\n-                $dirs[] = \\Gaufrette\\Util\\Path::dirname($file);\n+            if ('.' !== $dirname = \\Gaufrette\\Util\\Path::dirname($file)) {\n+                $dirs[] = $dirname;\n             }\n         }\n "
+    }
+  ]
+}

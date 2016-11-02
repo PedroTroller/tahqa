@@ -1,0 +1,21 @@
+version: '2'
+
+services:
+
+    proxy:
+        image: jwilder/nginx-proxy
+        container_name: container-http-proxy
+        volumes:
+            - /var/run/docker.sock:/tmp/docker.sock:ro
+        ports:
+            - '80:80'
+
+    api:
+        build: docker/api
+
+    docker:
+        build: docker/runner
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock
+            - ./script:/app/script
+
